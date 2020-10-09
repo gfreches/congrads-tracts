@@ -1,0 +1,8 @@
+#!/bin/bash
+
+subjects=`cat human_subjects.txt`
+for subj in $subjects;do
+for tract in ac af_r af_l ar_r ar_l cbd_r cbd_l cbp_r cbp_l cbt_r cbt_l fa_r fa_l fma fmi fx_r fx_l ifo_r ifo_l ilf_r ilf_l mdlf_r mdlf_l or_r or_l slf1_r_kattest2 slf1_l_kattest2 slf2_r_kattest2 slf2_l_kattest2 slf3_r_kattest2 slf3_l_kattest2 unc_r unc_l;do
+flirt -in /vol/neuroecology-scratch/guifre/Segmentation_Data_Driven/test-retest/test/tracts/$subj/tracts/$tract/density.nii.gz -ref /vol/neuroecology-scratch/guifre/Segmentation_Data_Driven/test-retest/test/tracts/$subj/tracts/$tract/density.nii.gz -out /vol/neuroecology-scratch/guifre/Segmentation_Data_Driven/test-retest/test/tracts/$subj/tracts/$tract/density_1_25.nii.gz -applyisoxfm 1.250 -init /vol/neuroecology-y/HCP_test_retest/test/103818/T1w/Diffusion.bedpostX/xfms/eye.mat
+done
+done

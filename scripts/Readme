@@ -1,0 +1,40 @@
+concat_func.sh  concatenates all .func files in test/results and retest/results to a single file in Gradient_Projections
+
+concat_vol.sh concatenates volumetric gradient results to a single file in Gradient_Projections
+
+concat_vol_proj.sh concatenates volumetric projection results to a single file in Gradient_Projections
+
+copy_files_volumes.sh and copy_files.sh copy files from the HCP directory in the cluster to HCP_Masks
+
+correct_gradients.m flips gradients that are inverted relative to a reference gradient
+
+create_avg_atlas.m creates the consensus atlas (95% of convergence)
+
+cycle_trough_neighbors.m is an auxiliary function to test_retest_accuracy.m
+
+Dice_Coefficient.m calculates the dice coefficient between sets of clusters
+
+func2mask.sh creates a volumetric mask out of a surface metric file
+
+human_subjects.txt is a list of subjects that appears in many scripts
+
+ICC_func.m and ICC calculate ICC between cohorts
+
+important_tracts calculates which tracts are present within a projection image
+
+makefunc and makefunc_global.m create surface ROIs from surface atlases
+
+mutliply_mask and multiply_or_mask multiply tracts with projection images to create tract projections
+
+plot_profile and plot profile_proj compute the gradient curves for the optic radiations
+
+probtrackx and probtrackx_from surface are the probtrackx sripts used as the intial steps towards calculating the gradients
+
+subtract_mask remove the seed mask from the target
+
+test_retest_accuracy calculate the rate of retrieval of the same gradient in the other cohort
+
+tract_projection.m calculates tract projection centroids
+
+
+
